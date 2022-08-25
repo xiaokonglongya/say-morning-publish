@@ -1,17 +1,7 @@
-name: SEND_MESSAGE
+name: 推送消息
 on:
   schedule:
     - cron: '0 8 * * SUN'
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: true
-        default: 'warning'
-        type: choice
-        options:
-          - info
-          - warning
-          - debug
 
   workflow_dispatch:
     inputs:
